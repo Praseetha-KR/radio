@@ -25,7 +25,7 @@ const double channelList[] = {
   104, // Fever (Hindi)
   106.4 // Gyanvani (by IGNOU)
 };
-const int listLength = 12;
+const int listLength = sizeof(channelList);
 int currentIndex = 0;
 int serialInput;
 TEA5767 radio;
@@ -42,7 +42,8 @@ void loop() {
     if (serialInput == 'n') {
       if (currentIndex == listLength) {
         currentIndex = 0;
-      } else {
+      }
+      else {
         currentIndex += 1;
       }
       radio.set_frequency(channelList[currentIndex]);
