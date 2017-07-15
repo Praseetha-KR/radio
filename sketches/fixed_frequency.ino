@@ -1,3 +1,7 @@
+/*
+ * FM Receiver listening to predefined frequency
+ */
+
 #include <Wire.h>
 #include <TEA5767.h>
 
