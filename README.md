@@ -11,37 +11,40 @@
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 - Python 3.x
 
-## Setup
+# Setup
 
-#### 1. Connection Diagram
+## 1. Connection
 ![Connection Diagram](./images/radio_connection_diagram.jpg)
 
-[http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html](http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html)
 
-#### 2.Install the following Libraries in Arduino IDE:
-- [Wire](https://www.arduino.cc/en/Reference/Wire)
-- [TEA5767](https://github.com/andykarpov/TEA5767)
+## 2. Arduino
+1. Install the following Libraries in Arduino IDE:
+	- [Wire](https://www.arduino.cc/en/Reference/Wire)
+	- [TEA5767](https://github.com/andykarpov/TEA5767)
 
-#### 3. Connect & Upload to Arduino
-1. Connect Arduino to laptop via USB cable
-2. From Arduino IDE, compile & upload the sketch `sketch/radio.ino` to the Arduino board. 
+2. Connect Arduino to laptop via USB cable
+3. From Arduino IDE, compile & upload the sketch `sketch/radio.ino` to the Arduino board. 
 
-#### 4. Server Configuration
+
+## 3. Server 
+
+#### Configuration
+Update `SERIALPORT` value in `python/config.py`. 
+
 To list the ports:
 ```
 ls /dev/tty.*
 ```
 (The available USB ports in MacBook Pro are something like `/dev/cu.usbmodem1411` and `/dev/cu.usbmodem1421`.)
 
-Update it in your configuration file for the `SERIALPORT` value.
 
-#### 5. Run the server
+#### Starting server
 ```
 FLASK_APP=python/radio.py flask run
 ```
 This will start the server in [127.0.0.1:5000](http://127.0.0.1:5000)
 
-## APIs available
+# APIs available
 
 ##### 1. Tune to a frequency
 ```
@@ -63,5 +66,5 @@ To avail this info, you have to update stations list in `config.py`. Currently o
 - [ ] Volume control
 - [ ] Speaker instead of headset
 
-### Reference:
+### References:
 [http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html](http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html)
