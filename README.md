@@ -1,28 +1,28 @@
 # Radio
 > 📻 FM radio receiver using Arduino & TEA5767 module
 
+## Pre-requisites
 
-#### Required Components
-1. Arduino UNO
-2. TEA5767 FM Module
+#### Hardware:
+- Arduino UNO
+- TEA5767 FM Module
 
-#### Pre-requisites
+#### Software:
 - [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 - Python 3.x
 
-##Setup
+## Setup
 
-#### 1. Install the following Libraries in Arduino IDE:
-
-- [Wire](https://www.arduino.cc/en/Reference/Wire)
-- [TEA5767](https://github.com/andykarpov/TEA5767)
-
-#### 2. Connection Diagram
+#### 1. Connection Diagram
 ![Connection Diagram](./images/radio_connection_diagram.jpg)
 
 [http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html](http://www.ardumotive.com/how-to-use-the-tea5767-fm-radio-module-en.html)
 
-#### 3. Arduino
+#### 2.Install the following Libraries in Arduino IDE:
+- [Wire](https://www.arduino.cc/en/Reference/Wire)
+- [TEA5767](https://github.com/andykarpov/TEA5767)
+
+#### 3. Connect & Upload to Arduino
 1. Connect Arduino to laptop via USB cable
 2. From Arduino IDE, compile & upload the sketch `sketch/radio.ino` to the Arduino board. 
 
