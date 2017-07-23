@@ -52,6 +52,8 @@ This will start the server in [127.0.0.1:5000](http://127.0.0.1:5000)
 ```
 eg: [127.0.0.1:5000/tune/98.3](http://127.0.0.1:5000/tune/98.3)
 
+![/tune/<frequency>](./images/screenshot_tune.png)
+
 ##### 2. List of predefined stations
 ```
 /stations/<location>
@@ -59,6 +61,8 @@ eg: [127.0.0.1:5000/tune/98.3](http://127.0.0.1:5000/tune/98.3)
 To avail this info, you have to update stations list in `config.py`. Currently only Bangalore(BLR) FM stations are listed.
 
 [127.0.0.1:5000/stations/blr](http://127.0.0.1:5000/stations/blr)
+
+![/stations/<location>](./images/screenshot_stations.png)
 
 ## Pending tasks
 - [ ] Scan mode
